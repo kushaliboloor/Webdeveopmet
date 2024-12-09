@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    /* Reset and Basic Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #333;
+      background-color: #f4f4f9;
+    }
+
+    header {
+      background-color: #6C63FF;
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #4CAF50;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #about {
+      background-color: #fff;
+    }
+
+    #services {
+      background-color: #f0f0f5;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: #ffffff;
+      padding: 25px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      width: 25%;
+      min-width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer {
+      background-color: #232946;
+      color: #EAEAEA;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: #6C63FF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+      }
+
+      .box {
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Landing Page</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We create stunning websites that combine user-friendliness with visual appeal, ensuring a seamless digital experience.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="box">
+        <h3>Web Design</h3>
+        <p>Crafting modern, responsive designs tailored to showcase your business at its best.</p>
+      </div>
+      <div class="box">
+        <h3>Development</h3>
+        <p>Delivering high-quality code using the latest technologies and best practices.</p>
+      </div>
+      <div class="box">
+        <h3>Support</h3>
+        <p>Providing round-the-clock assistance to keep your website up and running smoothly.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Digital. All Rights Reserved. <a href="#contact">18181818181</a></p>
+  </footer>
+</body>
+</html>
